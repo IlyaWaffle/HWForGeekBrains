@@ -14,7 +14,7 @@ while (index < 5)
     index++;
 }
 
-Console.Write($"\n");
+Console.Write($" \n");
 
 for (int index2 = 0; index2 < 5; index2++)
 {
