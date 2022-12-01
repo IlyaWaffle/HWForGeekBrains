@@ -1,22 +1,16 @@
 ﻿int a = 0;
 int b = a;
 
-// Console.Write($"Введите первое число: ");
-// int.TryParse(Console.ReadLine()!, out a);
-// Console.Write($"Введите второе число: ");
-// int.TryParse(Console.ReadLine()!, out b);
+Console.Write($"Введите первое число: ");
+bool flag = int.TryParse(Console.ReadLine()!, out a);
+Console.Write($"Введите второе число: ");
+bool flag2 = int.TryParse(Console.ReadLine()!, out b);
 
-int index = 0;
-
-while (index < 5)
+if (flag && flag2)
 {
-    Console.Write($"{index} ");
-    index++;
+    Console.Write($"{a} + {b} = {a + b}");
 }
-
-Console.Write($" \n");
-
-for (int index2 = 0; index2 < 5; index2++)
+else
 {
-    Console.Write($"{index2} ");
+    Console.Write($"Неверный ввод\n");
 }
